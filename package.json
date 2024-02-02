@@ -9,7 +9,8 @@
     "start": "react-native start",
     "test": "jest",
     "android:prebuild": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
-    "android:build": "cd android && gradlew assembleDebug && cd ..",
+    "android:build:debug": "cd android && gradlew assembleDebug && cd ..",
+    "android:build:release": "cd android && gradlew assembleRelease && cd ..",
     "android:uninstall": "cd android && gradlew clean && gradlew uninstallAll && cd ..",
     "android:clean": "cd android && gradlew clean && cd .."
   },
