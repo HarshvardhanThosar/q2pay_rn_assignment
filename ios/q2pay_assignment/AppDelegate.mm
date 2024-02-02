@@ -1,5 +1,7 @@
 #import "AppDelegate.h"
 
+#import <React/RCTLinkingManager.h> // Deep Linking | Setup on iOS https://reactnavigation.org/docs/deep-linking/#setup-on-ios
+
 #import <React/RCTBundleURLProvider.h>
 
 @implementation AppDelegate
@@ -26,6 +28,14 @@
 #else
   return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
+}
+
+// // Deep Linking | Setup on iOS https://reactnavigation.org/docs/deep-linking/#setup-on-ios
+- (BOOL)application:(UIApplication *)application
+   openURL:(NSURL *)url
+   options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+{
+  return [RCTLinkingManager application:application openURL:url options:options];
 }
 
 @end
