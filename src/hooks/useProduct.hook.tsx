@@ -1,5 +1,9 @@
 import {useInfiniteQuery, useQuery} from '@tanstack/react-query';
+
+// A P I S
 import apis from '../apis/apis';
+
+// C O N S T A N T S
 import constants from '../constants/constants';
 
 function useProductListing() {

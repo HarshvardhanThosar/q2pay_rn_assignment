@@ -2,9 +2,10 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 // R O U T E S
-// import routes from '../../constants/routes';
 import ProductListingRoute from '../../routes/ProductListing.route';
 import ProductDetailsRoute from '../../routes/ProductDetails.route';
+
+// C O M P O N E N T S
 import Header from '../../components/Header.component';
 
 export type ProductStackParams = {
@@ -24,7 +25,7 @@ export {ProductStackRoutes};
 const Stack = createNativeStackNavigator<ProductStackParams>();
 
 const ProductListingHeader = (_: any) => <Header title="Product Listing" />;
-const ProductDetailsHeader = (_: any) => <Header title="Product Listing" />;
+const ProductDetailsHeader = (_: any) => <Header title="Product Details" />;
 
 const ProductFlow = () => {
   return (

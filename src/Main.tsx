@@ -8,7 +8,7 @@ import ProductFlow, {
 
 function Main(): React.JSX.Element {
   const linking: LinkingOptions<ReactNavigation.RootParamList> = {
-    prefixes: ['/'],
+    prefixes: ['q2pay://'],
     config: {
       screens: {
         [ProductStackRoutes.product_details]: 'product/:id',

@@ -22,6 +22,8 @@ import parseCurrency from '../utils/parseCurrency';
 
 // H O O K S
 import {useProductDetails} from '../hooks/useProduct.hook';
+
+// C O M P O N E N T S
 import Loader from '../components/Loader.component';
 import ErrorMessage from '../components/ErrorMessage.component';
 

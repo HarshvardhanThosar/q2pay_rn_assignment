@@ -1,14 +1,16 @@
 import React from 'react';
 import {Alert, Share, StyleSheet, View} from 'react-native';
 import {Card, IconButton, Text} from 'react-native-paper';
-import StarRatings from './StarRatings';
 
-// U T I L S
+// U T I L S  /  C O N S T A N T S
+import constants from '../constants/constants';
 import parseCurrency from '../utils/parseCurrency';
 
 // T Y P E S
 import type ProductType from '../types/Product.type';
-import constants from '../constants/constants';
+
+// C O M P O N E N T S
+import StarRatings from './StarRatings';
 
 function ProductCard({item}: {item: ProductType}) {
   const {id, thumbnail, brand, title, rating, price, discountPercentage} = item;

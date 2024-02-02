@@ -2,15 +2,15 @@ import React from 'react';
 import {FlatList, Pressable, StyleSheet} from 'react-native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
-// C O M P O N E N T S
-import ProductCard from '../components/ProductCard.component';
-
 // T Y P E S
 import type ProductType from '../types/Product.type';
 import {type ProductStackParams} from '../routers/ProductFlow-Stack/ProductFlow.stack';
 
 // H O O K S
 import {useProductListing} from '../hooks/useProduct.hook';
+
+// C O M P O N E N T S
+import ProductCard from '../components/ProductCard.component';
 import Loader from '../components/Loader.component';
 import ErrorMessage from '../components/ErrorMessage.component';
 

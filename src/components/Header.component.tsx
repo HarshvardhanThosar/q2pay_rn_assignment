@@ -1,12 +1,14 @@
+import React from 'react';
 import {
   NavigationProp,
   RouteProp,
   useNavigation,
   useRoute,
 } from '@react-navigation/native';
-import React from 'react';
 import {Appbar} from 'react-native-paper';
-import {ProductStackParams} from '../routers/ProductFlow-Stack/ProductFlow.stack';
+
+// T Y P E S
+import {type ProductStackParams} from '../routers/ProductFlow-Stack/ProductFlow.stack';
 
 type HeaderPropsType = {
   title: string;
